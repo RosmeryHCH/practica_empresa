@@ -1,0 +1,15 @@
+CREATE DATABASE Empresa;
+GO
+
+USE Empresa;
+GO
+
+CREATE TABLE Trabajadores (
+    ID INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(50),
+    Apellidos NVARCHAR(50),
+    SueldoBruto DECIMAL(10, 2),
+    Categoria CHAR(1),
+    MontoAumento DECIMAL(10, 2),
+    SueldoNeto DECIMAL(10, 2)
+);
